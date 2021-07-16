@@ -1,0 +1,19 @@
+title: Luke Dahl
+email: lsd5k@virginia.edu
+description: >- # this means to ignore newlines until "baseurl:"
+  Luke Dahl is Assistant Professor of Composition and Computer Technologies in the 
+  Music Department at University of Virginia where he teaches classes on music 
+  technology, audio signal processing, and music interaction design. His 
+  research is primarily situated in the interdisciplinary field of New 
+  Interfaces for Musical Expression (NIME) which investigates and explores 
+  the intersection of technology and musical practice through the activities of 
+  design, musical performance, and empirical research.
+baseurl: "/lukedahl" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+defaults:
+  -
+    values:
+      layout: "default"

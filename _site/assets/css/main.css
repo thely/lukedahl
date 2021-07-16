@@ -1,0 +1,59 @@
+body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.page-wrap { display: grid; grid-gap: Max(2em, 8vw); grid-template-columns: 1fr 5fr; margin: 6vw; margin-right: 4em; }
+
+nav { margin-top: 6em; text-align: right; }
+
+nav ul { list-style-type: none; padding-left: 0; position: relative; }
+
+nav ul li { position: relative; margin-bottom: 1em; }
+
+nav ul li a { color: blue; font-size: 1.1em; text-decoration: none; }
+
+nav ul li a:hover { color: white; }
+
+nav ul li.active a { color: white; }
+
+nav ul li::after { content: ""; position: absolute; top: 50%; right: -3vw; width: 2vw; height: 1px; background-color: black; }
+
+nav ul li:last-of-type::after { border-bottom: 20em solid white; z-index: 80; }
+
+:root { --link-about: cyan; --link-projects: #c776ff; --link-pubs: #e87842; --link-resume: #d93d3d; --link-music: #39dd39; --header-font: "IBM Plex Mono"; }
+
+nav li.active:nth-of-type(1) a, nav li:nth-of-type(1):hover a { background-color: var(--link-about); }
+
+#about { color: var(--link-about); }
+
+nav li.active:nth-of-type(2) a, nav li:nth-of-type(2):hover a { background-color: var(--link-projects); }
+
+#projects { color: var(--link-projects); }
+
+nav li.active:nth-of-type(3) a, nav li:nth-of-type(3):hover a { background-color: var(--link-pubs); }
+
+#publications { color: var(--link-pubs); }
+
+nav li.active:nth-of-type(4) a, nav li:nth-of-type(4):hover a { background-color: var(--link-resume); }
+
+#resume { color: var(--link-resume); }
+
+nav li.active:nth-of-type(5) a, nav li:nth-of-type(5):hover a { background-color: var(--link-music); }
+
+#music { color: var(--link-music); }
+
+article { margin-top: 1em; }
+
+.content-wrap { padding-right: 4vw; }
+
+h1 { font-size: Max(35px, 4vw); position: relative; }
+
+h1::before { content: ""; position: absolute; width: 3vw; height: 10em; background-color: white; border-top: 1px solid black; border-left: 1px solid black; top: 50%; left: -5.1vw; }
+
+header h2 { margin-bottom: 2em; }
+
+h3 { font-size: 1.3em; margin-top: 1.5em; }
+
+h1, h2, h3 { font-family: var(--header-font); }
+
+hr { border-bottom: 0 solid transparent; border-top: 2px dashed gray; margin: 2em 0; }
+
+/*# sourceMappingURL=main.css.map */
